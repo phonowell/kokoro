@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/phonowell/kokoro",
   "devDependencies": {
-    "fire-keeper": "0.0.80"
+    "fire-keeper": "0.0.82"
   },
   "dependencies": {}
 }
