@@ -1,18 +1,17 @@
 # require
 
 $$ = require 'fire-keeper'
-{$, _, Promise} = $$.library
-co = Promise.coroutine
+{$, _} = $$.library
 
 # task
 
 ###
 
-  build()
+build()
 
 ###
 
-$$.task 'build', co ->
+$$.task 'build', ->
 
   lint = './lint'
 
