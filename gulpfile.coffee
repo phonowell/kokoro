@@ -15,16 +15,10 @@ $$.task 'build', ->
 
   lint = './lint'
 
-  yield $$.compile "#{lint}/*.yaml"
-
-  listClean = []
+  await $$.compile "#{lint}/*.yaml"
 
   source = "#{lint}/coffeelint.json"
-  yield $$.copy source, './'
-  listClean.push source
+  await $$.move source, './'
 
   source = "#{lint}/stylint.json"
-  yield $$.copy source, './', '.stylintrc'
-  listClean.push source
-
-  yield $$.remove listClean
+  await $$.move source, './', '.stylintrc'
