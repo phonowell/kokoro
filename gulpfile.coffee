@@ -1,24 +1,16 @@
-# require
-
-$$ = require 'fire-keeper'
-{$, _} = $$.library
+$ = require 'fire-keeper'
+fs = require 'fs'
+path = require 'path'
 
 # task
+listFilename = fs.readdirSync './task'
+for filename in listFilename
 
-###
+  unless ~filename.search /\.coffee/
+    continue
 
-build()
+  name = filename.replace /\.coffee/, ''
 
-###
-
-$$.task 'build', ->
-
-  lint = './lint'
-
-  await $$.compile "#{lint}/*.yaml"
-
-  source = "#{lint}/coffeelint.json"
-  await $$.move source, './'
-
-  source = "#{lint}/stylint.json"
-  await $$.move source, './', '.stylintrc'
+  do (name) -> $.task name, ->
+    fn = require "./task/#{name}.coffee"
+    fn()
