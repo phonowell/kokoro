@@ -18,8 +18,8 @@
     "url": "https://github.com/phonowell/kokoro/issues"
   },
   "homepage": "https://github.com/phonowell/kokoro",
-  "devDependencies": {
-    "fire-keeper": "^0.0.142"
-  },
-  "dependencies": {}
+  "devDependencies": {},
+  "dependencies": {
+    "fire-keeper": "0.0.149"
+  }
 }
