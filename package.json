@@ -1,25 +1,25 @@
 {
-  "name": "kokoro",
-  "version": "0.0.1",
+  "author": "Mimiko Phonowell <phonowell@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/phonowell/kokoro/issues"
+  },
+  "dependencies": {
+    "fire-keeper": "0.0.155"
+  },
   "description": "Kokoro.",
+  "devDependencies": {},
+  "homepage": "https://github.com/phonowell/kokoro",
+  "keywords": [
+    "kokoro"
+  ],
+  "license": "GPL-3.0+",
   "main": "./index.js",
-  "scripts": {},
+  "name": "kokoro",
   "repository": {
     "type": "git",
     "url": "https://github.com/phonowell/kokoro.git"
   },
-  "keywords": [
-    "kokoro"
-  ],
-  "author": "Mimiko Phonowell <phonowell@gmail.com>",
-  "license": "GPL-3.0+",
+  "scripts": {},
   "url": "https://github.com/phonowell/kokoro",
-  "bugs": {
-    "url": "https://github.com/phonowell/kokoro/issues"
-  },
-  "homepage": "https://github.com/phonowell/kokoro",
-  "devDependencies": {},
-  "dependencies": {
-    "fire-keeper": "0.0.149"
-  }
+  "version": "0.0.1"
 }
