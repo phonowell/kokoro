@@ -52,6 +52,7 @@ jspm_packages
 # build
 build
 dist
+public
 
 # compiled
 *.css
