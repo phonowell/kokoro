@@ -5,8 +5,8 @@ braces_spacing:
   value: 0
 cyclomatic_complexity:
   level: warn
-eol_last:
-  level: warn
+# eol_last:
+#   level: warn
 max_line_length:
   level: warn
   value: 255
@@ -24,6 +24,8 @@ space_operators:
   level: warn
 no_this:
   level: warn
+no_throwing_strings:
+  level: ignore
 no_unnecessary_double_quotes:
   level: warn
 spacing_after_comma:

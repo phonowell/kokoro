@@ -1,7 +1,5 @@
 $ = require 'fire-keeper'
-{_} = $
 
-# return
 module.exports = ->
 
   base = './lint'
