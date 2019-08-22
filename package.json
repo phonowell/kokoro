@@ -4,7 +4,7 @@
     "url": "https://github.com/phonowell/kokoro/issues"
   },
   "dependencies": {
-    "fire-keeper": "0.0.161"
+    "fire-keeper": "0.0.163"
   },
   "description": "Kokoro.",
   "devDependencies": {},
